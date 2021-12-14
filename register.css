@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: url("background 3.jpg");
+    background-size: 100%;
+    opacity: 15;
+}

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(".jpg");
+    background-size: 100%;
+}
+
+.fld{
+    margin-top: 120px;
+    padding: 50px;
+    margin-right: -50px;
+}
+.form{
+   
+    display: flex;
+    justify-content: center;
+
+}
+
+.form input{
+    display: flex;
+    line-height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+    width: 200px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.btn{
+    margin-top: 20px;
+    margin-left: 0px;
+    
+}
+
+.btn {
+    padding-top: 4px;
+    padding-bottom: 3px;
+    width: 213px;
+    font-size: 15px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+background-color: blue;
+color: yellow;
+}

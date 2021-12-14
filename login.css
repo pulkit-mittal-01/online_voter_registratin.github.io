@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: gray;
+}
+
+.fld{
+    background: crimson;
+    padding: 50px;
+    padding-top: 50px;
+    margin-right: -50px;
+    margin-top: -50px;
+}
+
+.login{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form{
+    margin-top: 150px;
+    border: 1px;
+    border-radius: 1px;
+    float: right;
+    margin-right: 590px;
+
+}
+
+.form input{
+    display: flex;
+    line-height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 200px;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.btn{
+    margin-top: 20px;
+    margin-left: 0px;
+    
+}
+
+.btn button{
+    padding-top: 4px;
+    padding-bottom: 3px;
+    width: 213px;
+    font-size: 15px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+.btn button:hover{
+background-color: blue;
+color: yellow;
+}
+
+.new h4{
+    font-size: 15px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.account{
+    margin-top: 20px;
+}
