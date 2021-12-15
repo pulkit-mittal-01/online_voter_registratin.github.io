@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="voter.css">
+    <title>Voter Registration system</title>
+</head>
+<body>
+    <div id="nav">
+
+        <div class="voter">
+            <h2>Welcome To India's Online Voter Registration System</h2>
+            
+            
+        </div>
+        <p class="welcome">Office Of Election Commision </p>
+    </div>
+
+        <div class="box" id="list">
+<ul type="none" class="row">
+    <a href="sign in.html" style="text-decoration: none;"><li>Sign up</li><a>
+        <a href="login.html" style="text-decoration: none;"><li>Login</li></a>
+        <a href="voter id.html" style="text-decoration: none;"><li>Voter_Id</li></a>
+        <a href="login.html" style="text-decoration: none;"><li>Voter_Registeration</li></a>
+        <a href="dsnhj" style="text-decoration: none;"><li>Voting_center</li></a>
+        <a href="#.html" style="text-decoration: none;"><li>Gallery</li></a>
+        <a href="contact us.html" style="text-decoration: none;"><li>Contact</li></a>
+        <a href="complain now.html" style="text-decoration: none;"><li>Complaint</li></a>
+       
+    </ul>
+    
+</div>
+
+<br><br>
+<div class="container1" style="margin-top: 60px;width: 1300px;">
+    <div class="image-container" style="width: 00px;">
+        <img src="https://eci.gov.in/uploads/swiperslider_images/SLIDER-003.jpg.8a797ac9244f47b74ab2db5c9f8872c7.jpg.8663505285a6d887d355c5a81f042e1f.jpg" id="content1"  class="active">
+        <img src="https://eci.gov.in/uploads/swiperslider_images/SLIDER-4.jpg.1339e721aa544a0798522f3f83102838.jpg" id="content2">
+        <img src="https://eci.gov.in/uploads/swiperslider_images/SLIDER-001.jpg.ddcd65f12d5f020a44541e4c56dcd2f4.jpg" id="content3">
+        <img src="https://eci.gov.in/uploads/swiperslider_images/SLIDER-ECI.jpg.161b83f2ea5ab81925cd5e7f1072f72e.jpg" id="content4">
+        <img src="https://eci.gov.in/uploads/swiperslider_images/SLIDER-002.jpg.2e8d940bb6ea18b20bcd6419758dbfc3.jpg" id="content5">
+        
+
+    </div>
+    <div class="dot-container">
+        <button onclick = "dot(1)" style="margin-right: 10px; "></button>
+        <button onclick = "dot(2)"style="margin-right: 10px;"></button>
+        <button onclick = "dot(3)"style="margin-right: 10px;"></button>
+        <button onclick = "dot(4)"style="margin-right: 10px;"></button>
+        <button onclick = "dot(5)"style="margin-right: 10px;"></button>
+     </div>
+     <button id="prev" onclick="prev()"> &lt; </button>
+<button id="next" onclick="next()"> &gt; </button>
+<script>
+    const dots = document.querySelectorAll(".dot-container button");
+const images = document.querySelectorAll(".image-container img");
+let i = 0; // current slide
+let j = 5; // total slides
+function next(){
+    document.getElementById("content" + (i+1)).classList.remove("active");
+    i = ( j + i + 1) % j;
+    document.getElementById("content" + (i+1)).classList.add("active");
+    indicator( i+ 1 );
+}
+function prev(){
+    document.getElementById("content" + (i+1)).classList.remove("active");
+    i = (j + i - 1) % j;
+    document.getElementById("content" + (i+1)).classList.add("active");
+    indicator(i+1);
+}
+function indicator(num){
+    dots.forEach(function(dot){
+        dot.style.backgroundColor = "transparent";
+    });
+    document.querySelector(".dot-container button:nth-child(" + num + ")").style.backgroundColor = "#076bb8";
+}
+function dot(index){
+    images.forEach(function(image){
+        image.classList.remove("active");
+    });
+    document.getElementById("content" + index).classList.add("active");
+    i = index - 1;
+    indicator(index);
+}
+</script>
+</div>
+
+<div class="text" style="margin-top: 450px;">
+    <h3>New information</h3>
+    <marquee class="info" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nesciunt iste distinctio cupiditate accusamus fugiat pariatur, consequuntur ipsam laudantium minima ea, eos vel facere delectus porro numquam nobis. Recusandae, saepe.</marquee>
+</div>
+
+<div class="container">
+    <h1>Election</h1>
+    <p>
+        An election is a formal group decision-making process by which a population chooses an individual or multiple
+            individuals to hold public office. Elections have been the usual mechanism by which modern representative
+            democracy has operated since the 17th century.
+    </p>
+    <h1 style="margin-top: 30px;">Voting</h1>
+    <p>
+        Voting is a method for a group, such as a meeting or an electorate, in order to make a collective decision or
+            express an opinion usually following discussions, debates or election campaigns. Democracies elect holders
+            of high office by voting. Residents of a place represented by an elected official are called "constituents",
+            and those constituents who cast a ballot for their chosen candidate are called "voters". There are different
+            systems for collecting votes, but while many of the systems used in decision-making can also be used as
+            electoral systems, any which cater for proportional representation can only be used in elections.    
+    </p>
+    <h1 style="margin-top: 30px;">Registration</h1>
+    <p>Election commission of India offers online voter registration for Indian citizens who have attained the age of 18 on the qualifying date (1st of January of the year of revision of electoral roll). Citizen, can enroll himself/herself as General Voter and fill Form 6 online at National Voters' Service Portal. Registered voters should also check their enrollment status.
+    </p>
+    <h2 style="margin-top: 20px; line-height: 30px;">Register online to Vote</h2>
+    <p>1. General Voters need to fill Form 6 (Link to online form). This form is also for 'First time voters' and 'voters who have shifted to another constituency'
+        <br>2. NRI Voter need to fill form 6A (Link to online form)
+         <br>3. For Deletion or Objection in electoral roll fill form 7 (link to online form)
+         <br>4. Please fill Form 8 (Link to online form) for any change in (Name, Photo, Age, EPIC Number, Address, Date of birth, Age, Name of relative, Type of relation, Gender).
+         <br>5. In case of shifting from one place of residence to another place of residence within the same constituency please fill Form 8A (Link to online form).
+        <br><br><b>Please note :</b> Voters need to fill Form 6 (Link to online form) if they are shifting from one constituency to another. For more information, please see the Voter Guide on
+    </p>
+    <h2 style="margin-top: 20px; line-height: 30px;">Requirements for registering to vote</h2>
+    <ol type="1" style="margin-left: 20px;">
+        <li>Age grater then 18</li>
+        <li>should be indian</li>
+        <li>are not disqualified to be enroll as an elector</li>
+        <li>are ordinarily resident of part/polling area of the consituency where you want to be enrolled</li>
+    </ol>
+    <h2 style="margin-top: 20px; line-height: 30px;">How to register to vote offline</h2>
+<p>1. You can also enroll offline. Fill two copies of Form 6.This form is also available free of cost in offices of Electoral Registration Officers / Assistant Electoral Registration Officers and Booth Level Officers.
+   <br>2. The application accompanied by copies of the relevant documents can be filed in person before the concerned Electoral Registration Officer / Assistant Electoral Registration Officer or sent by post addressed to him or can be handed over to the Booth Level Officer of your polling area.
+   <br>3. Call 1950 for any help.
+</p>
+</div>
+
+<div class="content">
+    <div class="eligibility">
+       
+    </div>
+    <!--<div class="process">
+        <h3>Registration aur Change</h3>
+        <ol type="1">
+            <li>Sign up / Login</li>
+            <li>press registrarion</li>
+            <li>fill the form completely</li>
+            <li>Attach docouments</li>
+        </ol>
+    </div>
+    <div class="download">
+        <h3 >How to download Voter_id and <br>check  Voting Center</h3>
+        <ol type="1">
+            <li>login</li>
+            <li>Press  Download_id</li>
+            <li>Enter Registration id</li>
+            <li>Press Voting Center</li>
+        </ol>
+    </div>
+   
+</div>
+-->
+
+<footer class="footer">
+    <address>Rico industrial area sitapura<br> jaipur, Rajasthan<br>302022
+    </address>
+
+    <p class="under">Election Commision<br>Adhar Card Buero<br>Voting center Alloatment Buero</p>
+</footer>
+</body>
+</html>
